@@ -56,3 +56,46 @@ navbar.addEventListener("dblclick", (event) => {
   }
 });
 
+// Fonctionnalité 6
+
+const view = document.querySelectorAll(".btn-success");
+const img = document.querySelectorAll(".card-img-top");
+const text = document.querySelectorAll(".card-text");
+
+for (let i = 0; i < view.length; i++) {
+  view[i].addEventListener("mouseover", (event) => {
+    if (text[i].style.display !== "none") {
+      img[i].style.width = "20%"
+      text[i].style.display = "none"
+    } else {
+      img[i].style.width = "100%"
+      text[i].style.display = ""
+    }
+  })
+};
+
+
+// Fonctionnalité 7
+
+const card = document.querySelector(".album > .container > .row");
+const btnGrey = document.querySelector(".btn.btn-secondary.my-2");
+
+btnGrey.addEventListener("click", (event) => {
+  card.insertBefore(card.lastElementChild, card.firstElementChild);
+})
+
+
+/*// Fonctionnalité 7 :
+
+//Le parent
+let parent = document.querySelectorAll('.row')[1]
+
+//le button
+let btn = document.querySelectorAll('.my-2')[1]
+
+// Insère le nouvel élément dans le DOM avant le premier enfant
+btn.addEventListener('click', function() {
+  parent.insertBefore(parent.childNodes[10], parent.childNodes[0])
+  parent.insertBefore(parent.childNodes[11], parent.childNodes[0])
+})*/
+
