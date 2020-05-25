@@ -85,17 +85,3 @@ btnGrey.addEventListener("click", (event) => {
 })
 
 
-/*// Fonctionnalité 7 :
-
-//Le parent
-let parent = document.querySelectorAll('.row')[1]
-
-//le button
-let btn = document.querySelectorAll('.my-2')[1]
-
-// Insère le nouvel élément dans le DOM avant le premier enfant
-btn.addEventListener('click', function() {
-  parent.insertBefore(parent.childNodes[10], parent.childNodes[0])
-  parent.insertBefore(parent.childNodes[11], parent.childNodes[0])
-})*/
-
