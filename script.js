@@ -40,4 +40,19 @@ btnSecondCard.addEventListener('click', function() {
   } else {
     textSecondCard.style.color = 'green';
   }
-})
+});
+
+
+// Fonctionnalité 5
+
+const navbar = document.querySelector("header");
+
+navbar.addEventListener("dblclick", (event) => {
+  if (document.querySelector("link").disabled === false) {
+    document.querySelector("link").disabled = true ;
+  }
+  else {
+    document.querySelector("link").disabled = false ;
+  }
+});
+
